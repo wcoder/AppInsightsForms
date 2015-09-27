@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationInsightsXFormsDemo", "ApplicationInsightsXFormsDemo\ApplicationInsightsXFormsDemo\ApplicationInsightsXFormsDemo.csproj", "{A5A6C265-61B6-43ED-B69F-DDB9E706FA6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppInsightsForms", "AppInsightsForms\AppInsightsForms\AppInsightsForms.csproj", "{A5A6C265-61B6-43ED-B69F-DDB9E706FA6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationInsightsXFormsDemo.iOS", "ApplicationInsightsXFormsDemo\ApplicationInsightsXFormsDemo.iOS\ApplicationInsightsXFormsDemo.iOS.csproj", "{294ED059-C39A-4715-8CF4-6DD751CD28D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppInsightsForms.iOS", "AppInsightsForms\AppInsightsForms.iOS\AppInsightsForms.iOS.csproj", "{294ED059-C39A-4715-8CF4-6DD751CD28D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationInsightsXFormsDemo.Droid", "ApplicationInsightsXFormsDemo\ApplicationInsightsXFormsDemo.Droid\ApplicationInsightsXFormsDemo.Droid.csproj", "{254CE52C-6A41-4912-A0CF-313BD142BC0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppInsightsForms.Droid", "AppInsightsForms\AppInsightsForms.Droid\AppInsightsForms.Droid.csproj", "{254CE52C-6A41-4912-A0CF-313BD142BC0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationInsightsXFormsDemo.WinPhone", "ApplicationInsightsXFormsDemo\ApplicationInsightsXFormsDemo.WinPhone\ApplicationInsightsXFormsDemo.WinPhone.csproj", "{6AD1E678-183E-4ACC-8777-1FED0088AB17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppInsightsForms.WinPhone", "AppInsightsForms\AppInsightsForms.WinPhone\AppInsightsForms.WinPhone.csproj", "{6AD1E678-183E-4ACC-8777-1FED0088AB17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

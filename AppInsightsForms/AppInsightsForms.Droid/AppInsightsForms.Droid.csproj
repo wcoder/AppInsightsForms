@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ApplicationInsightsXFormsDemo.Droid</RootNamespace>
-    <AssemblyName>ApplicationInsightsXFormsDemo.Droid</AssemblyName>
+    <RootNamespace>AppInsightsForms.Droid</RootNamespace>
+    <AssemblyName>AppInsightsForms.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
@@ -99,8 +99,9 @@
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApplicationInsightsXFormsDemo\ApplicationInsightsXFormsDemo.csproj">
-      <Name>ApplicationInsightsXFormsDemo</Name>
+    <ProjectReference Include="..\AppInsightsForms\AppInsightsForms.csproj">
+      <Name>AppInsightsForms</Name>
+      <Project>{A5A6C265-61B6-43ED-B69F-DDB9E706FA6B}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ApplicationInsightsXFormsDemo.iOS
+namespace AppInsightsForms.iOS
 {
 	public class Application
 	{

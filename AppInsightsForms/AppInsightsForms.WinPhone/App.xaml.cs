@@ -6,9 +6,9 @@ using System.Windows.Markup;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using ApplicationInsightsXFormsDemo.WinPhone.Resources;
+using AppInsightsForms.WinPhone.Resources;
 
-namespace ApplicationInsightsXFormsDemo.WinPhone
+namespace AppInsightsForms.WinPhone
 {
 	public partial class App : Application
 	{

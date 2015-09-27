@@ -5,7 +5,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace ApplicationInsightsXFormsDemo
+namespace AppInsightsForms
 {
 	public class App : Application
 	{

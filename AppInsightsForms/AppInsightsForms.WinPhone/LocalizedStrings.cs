@@ -1,6 +1,6 @@
-﻿using ApplicationInsightsXFormsDemo.WinPhone.Resources;
+﻿using AppInsightsForms.WinPhone.Resources;
 
-namespace ApplicationInsightsXFormsDemo.WinPhone
+namespace AppInsightsForms.WinPhone
 {
 	/// <summary>
 	/// Provides access to string resources.

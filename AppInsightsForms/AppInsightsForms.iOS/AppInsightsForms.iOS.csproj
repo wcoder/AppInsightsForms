@@ -8,9 +8,9 @@
     <ProjectGuid>{294ED059-C39A-4715-8CF4-6DD751CD28D0}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ApplicationInsightsXFormsDemo.iOS</RootNamespace>
+    <RootNamespace>AppInsightsForms.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>ApplicationInsightsXFormsDemoiOS</AssemblyName>
+    <AssemblyName>AppInsightsFormsiOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -98,8 +98,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApplicationInsightsXFormsDemo\ApplicationInsightsXFormsDemo.csproj">
-      <Name>ApplicationInsightsXFormsDemo</Name>
+    <ProjectReference Include="..\AppInsightsForms\AppInsightsForms.csproj">
+      <Name>AppInsightsForms</Name>
+      <Project>{A5A6C265-61B6-43ED-B69F-DDB9E706FA6B}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
