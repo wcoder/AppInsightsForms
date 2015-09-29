@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using AI.XamarinSDK.Abstractions;
 
 namespace AppInsightsForms.iOS
 {
@@ -24,6 +25,10 @@ namespace AppInsightsForms.iOS
 		{
 			global::Xamarin.Forms.Forms.Init();
 			LoadApplication(new App());
+
+			AI.XamarinSDK.iOS.ApplicationInsights.Init();
+			ApplicationInsights.Setup("f768a00a-8d1c-4fe7-a3c5-2c2f92b9d5ba");
+			ApplicationInsights.Start();
 
 			return base.FinishedLaunching(app, options);
 		}

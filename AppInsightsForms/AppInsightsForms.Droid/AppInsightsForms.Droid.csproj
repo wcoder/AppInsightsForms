@@ -48,6 +48,18 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AI.XamarinSDK.Abstractions, Version=1.0.5668.38960, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.Xamarin.1.0.0-alpha2\lib\MonoAndroid23\AI.XamarinSDK.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AI.XamarinSDK.Android, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.Xamarin.1.0.0-alpha2\lib\MonoAndroid23\AI.XamarinSDK.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AI.XamarinSDK.AndroidBindings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ApplicationInsights.Xamarin.1.0.0-alpha2\lib\MonoAndroid23\AI.XamarinSDK.AndroidBindings.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FormsViewGroup, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.1.5.0.6447\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
       <Private>True</Private>
