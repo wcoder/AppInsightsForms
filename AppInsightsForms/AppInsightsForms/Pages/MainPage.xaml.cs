@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppInsightsForms.Interfaces;
+using System;
 using Xamarin.Forms;
 
 namespace AppInsightsForms.Pages
@@ -19,17 +20,12 @@ namespace AppInsightsForms.Pages
 			App.Insights.TrackPage(GetType().Name);
 		}
 
-		private void CrashClicked(object sender, EventArgs args)
-		{
-			throw new Exception("Test crash!");
-		}
-
 		private void ClickClicked(object sender, EventArgs args)
 		{
 			App.Insights.TrackEvent("ClickClicked");
 		}
 
-		private void ExceptionClicked(object sender, EventArgs args)
+		private void HandledExceptionClicked(object sender, EventArgs args)
 		{
 			try
 			{
@@ -39,6 +35,21 @@ namespace AppInsightsForms.Pages
 			{
 				App.Insights.TrackException(e);
 			}
+		}
+
+		private void UnhandledExceptionClicked(object sender, EventArgs args)
+		{
+			int value = 1 / int.Parse("0");
+		}
+
+		private void ManagedExceptionClicked(object sender, EventArgs args)
+		{
+			DependencyService.Get<INativeExceptionService>().ManagedException();
+		}
+
+		private void UnmanagedExceptionClicked(object sender, EventArgs args)
+		{
+			DependencyService.Get<INativeExceptionService>().UnmanagedException();
 		}
 
 		private async void GoDetailsClicked(object sender, EventArgs args)

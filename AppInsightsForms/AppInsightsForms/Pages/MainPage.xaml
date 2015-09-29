@@ -5,12 +5,15 @@
 	x:Class="AppInsightsForms.Pages.MainPage">
 	
 	<StackLayout>
-		
-		<Button Text="Crash" Clicked="CrashClicked" />
-		
 		<Button Text="Click" Clicked="ClickClicked" />
-		
-		<Button Text="Exception" Clicked="ExceptionClicked" />
+
+		<Label Text="App:" />
+		<Button Text="HandledException" Clicked="HandledExceptionClicked" />
+		<Button Text="UnhandledException" Clicked="UnhandledExceptionClicked" />
+
+		<Label Text="Native:" />
+		<Button Text="ManagedException" Clicked="ManagedExceptionClicked" />
+		<Button Text="UnmanagedException" Clicked="UnmanagedExceptionClicked" />
 
 		<Button Text="Go to details" Clicked="GoDetailsClicked" />
 	</StackLayout>

@@ -89,16 +89,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ApplicationInsightsProvider.cs" />
+    <Compile Include="DummyLibraryIOS.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
+    <Compile Include="NativeExceptionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\DummyLibrary\DummyLibrary.iOS\DummyLibrary.iOS.csproj">
+      <Project>{cca3eab7-9b83-4f48-9cbf-ca3155a5969f}</Project>
+      <Name>DummyLibrary.iOS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AppInsightsForms\AppInsightsForms.csproj">
       <Name>AppInsightsForms</Name>
       <Project>{A5A6C265-61B6-43ED-B69F-DDB9E706FA6B}</Project>

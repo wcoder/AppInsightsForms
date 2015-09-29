@@ -93,7 +93,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationInsightsProvider.cs" />
+    <Compile Include="DummyLibraryAndroid.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="NativeExceptionService.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -112,6 +114,10 @@
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\DummyLibrary\DummyLibrary.Android\DummyLibrary.Android.csproj">
+      <Project>{68e5289f-6819-4757-812b-6d7aaf78fd7b}</Project>
+      <Name>DummyLibrary.Android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AppInsightsForms\AppInsightsForms.csproj">
       <Name>AppInsightsForms</Name>
       <Project>{A5A6C265-61B6-43ED-B69F-DDB9E706FA6B}</Project>

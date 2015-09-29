@@ -37,7 +37,9 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Interfaces\INativeExceptionService.cs" />
     <Compile Include="Interfaces\IInsightsProvider.cs" />
+    <Compile Include="Interfaces\IDummyLibrary.cs" />
     <Compile Include="Pages\DetailsPage.xaml.cs">
       <DependentUpon>DetailsPage.xaml</DependentUpon>
     </Compile>
