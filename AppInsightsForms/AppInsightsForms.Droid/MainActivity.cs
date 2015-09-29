@@ -1,10 +1,5 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using AI.XamarinSDK.Abstractions;
 
@@ -25,7 +20,7 @@ namespace AppInsightsForms.Droid
 		{
 			base.OnStart();
 
-			ApplicationInsights.Setup("9428baae-1fd2-45d9-9e40-fb468a721043");
+			ApplicationInsights.Setup(Constants.ApplicationInsightsAndroidKey);
 			ApplicationInsights.Start();
 		}
 	}

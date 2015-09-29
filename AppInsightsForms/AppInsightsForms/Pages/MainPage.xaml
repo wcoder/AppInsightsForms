@@ -6,6 +6,8 @@
 	
 	<StackLayout>
 		
+		<Button Text="Crash" Clicked="CrashClicked" />
+		
 		<Button Text="Click" Clicked="ClickClicked" />
 		
 		<Button Text="Exception" Clicked="ExceptionClicked" />

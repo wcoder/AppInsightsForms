@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+using System.Threading.Tasks;
 using Foundation;
 using UIKit;
 using AI.XamarinSDK.Abstractions;
@@ -27,10 +25,23 @@ namespace AppInsightsForms.iOS
 			LoadApplication(new App());
 
 			AI.XamarinSDK.iOS.ApplicationInsights.Init();
-			ApplicationInsights.Setup("f768a00a-8d1c-4fe7-a3c5-2c2f92b9d5ba");
+			ApplicationInsights.Setup(Constants.ApplicationInsightsiOSKey);
 			ApplicationInsights.Start();
 
+			AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+			TaskScheduler.UnobservedTaskException += TaskSchedulerOnUnobservedTaskException;
+
 			return base.FinishedLaunching(app, options);
+		}
+
+		private static void TaskSchedulerOnUnobservedTaskException(object sender, UnobservedTaskExceptionEventArgs e)
+		{
+			App.UnhandledException(e.Exception);
+		}
+
+		private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+		{
+			App.UnhandledException((Exception)e.ExceptionObject);
 		}
 	}
 }

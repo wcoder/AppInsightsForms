@@ -10,6 +10,13 @@ namespace AppInsightsForms.Pages
 			InitializeComponent();
 		}
 
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
+
+			App.Insights.TrackPage(GetType().Name);
+		}
+
 		private async void BackClicked(object sender, EventArgs args)
 		{
 			await Navigation.PopAsync();
