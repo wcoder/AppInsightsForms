@@ -1,25 +1,32 @@
 ﻿using System;
+using AI.XamarinSDK.Abstractions;
 using Xamarin.Forms;
 using AppInsightsForms.Pages;
-using AppInsightsForms.Interfaces;
 
 namespace AppInsightsForms
 {
 	public class App : Application
 	{
-		public static IInsightsProvider Insights { get; private set; }
-
 		public App()
 		{
 			// The root page of your application
 			MainPage = new NavigationPage(new MainPage());
-
-			Insights = DependencyService.Get<IInsightsProvider>();
 		}
 
 		protected override void OnStart()
 		{
 			// Handle when your app starts
+			string iKey = null;
+			Device.OnPlatform(
+				Android: () => {
+					iKey = Constants.ApplicationInsightsAndroidKey;
+				},
+				iOS: () => {
+					iKey = Constants.ApplicationInsightsiOSKey;
+				}
+			);
+			ApplicationInsights.Setup(iKey);
+			ApplicationInsights.Start();
 		}
 
 		protected override void OnSleep()
@@ -34,7 +41,7 @@ namespace AppInsightsForms
 
 		public static void UnhandledException(Exception e)
 		{
-			Insights.TrackException(e);
+			TelemetryManager.TrackTrace(e.Message);
 		}
 	}
 }

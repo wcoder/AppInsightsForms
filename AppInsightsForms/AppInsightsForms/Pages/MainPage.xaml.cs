@@ -1,5 +1,6 @@
 ﻿using AppInsightsForms.Interfaces;
 using System;
+using AI.XamarinSDK.Abstractions;
 using Xamarin.Forms;
 
 namespace AppInsightsForms.Pages
@@ -17,12 +18,12 @@ namespace AppInsightsForms.Pages
 		{
 			base.OnAppearing();
 
-			App.Insights.TrackPage(GetType().Name);
+			TelemetryManager.TrackPageView(GetType().Name);
 		}
 
 		private void ClickClicked(object sender, EventArgs args)
 		{
-			App.Insights.TrackEvent("ClickClicked");
+			TelemetryManager.TrackEvent("ClickClicked");
 		}
 
 		private void HandledExceptionClicked(object sender, EventArgs args)
@@ -33,7 +34,7 @@ namespace AppInsightsForms.Pages
 			}
 			catch (Exception e)
 			{
-				App.Insights.TrackException(e);
+				TelemetryManager.TrackTrace(e.Message);
 			}
 		}
 

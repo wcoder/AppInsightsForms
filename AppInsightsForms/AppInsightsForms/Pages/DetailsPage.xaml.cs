@@ -1,4 +1,5 @@
 ﻿using System;
+using AI.XamarinSDK.Abstractions;
 using Xamarin.Forms;
 
 namespace AppInsightsForms.Pages
@@ -14,7 +15,7 @@ namespace AppInsightsForms.Pages
 		{
 			base.OnAppearing();
 
-			App.Insights.TrackPage(GetType().Name);
+			TelemetryManager.TrackPageView(GetType().Name);
 		}
 
 		private async void BackClicked(object sender, EventArgs args)
